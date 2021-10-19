@@ -1,0 +1,44 @@
+#bigBox{
+    background-color: darkblue;
+    align-content: flex-end;
+    height: 12em;
+    width: 22em;
+    display: flex;
+    flex-direction: row;
+    align-content:flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    gap: 1em;
+
+}
+.smallBoxes{
+    color: white;
+    background-color: rgba(173, 216, 230, 0.616);
+    border: white solid 2px;
+    width: 4em;
+    height: 4em;
+    margin-top: 2.5em ;
+    text-align: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+   
+    
+}
+#smallBox5{
+    display: flex;
+    color: white;
+    background-color: rgba(173, 216, 230, 0.616);
+    border: white solid 2px;
+    border-width: 2px;
+    width: 4em;
+    height: 4em;
+    text-align: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    align-self: flex-start;
+   
+}
