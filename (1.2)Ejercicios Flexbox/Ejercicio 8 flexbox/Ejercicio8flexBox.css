@@ -1,0 +1,56 @@
+body{
+    font-size: 16px;
+}
+.contenedorPrincipal{
+    margin: 1em;
+    padding: 1em;
+    border: solid 2px black;
+}
+.cabecera{
+    padding: 1em;
+    margin-bottom: 1em;
+    border: 2px solid black;
+}
+.contenidoPrincipal{
+    height: 47em;
+    width: auto;
+    border: solid black 2px;
+    display: flex;
+    flex-direction: row;
+}
+.contenidos:first-of-type{
+    margin: 1em;
+    height: 15%;
+    width:  15em;
+    border: 2px solid black;
+}
+.contenidos:last-of-type{
+    margin: 1em;
+    height: 77%;
+    width:  15em;
+    border: 2px solid black;
+}
+.cajas{
+    margin: 1em;
+    padding-top: 10em;
+    height: 73.4%;
+    width: 100%;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    align-content:baseline;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+.cajaFlex{
+    margin: 1em 0 1em 1em;
+    height: 6em;
+    width: 20em;
+    border: 2px blue dashed;
+}
+.pie{
+    padding: 1em;
+    margin-top: 1em;
+    border: 2px solid black;
+}
