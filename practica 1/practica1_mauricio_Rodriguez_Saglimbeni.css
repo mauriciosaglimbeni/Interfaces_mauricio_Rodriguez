@@ -1,4 +1,4 @@
-/* SIDE MENU ONLY CSS */
+/* SIDE MENU  */
 .sideMenu{
     height: 100%;
     width: 0;
@@ -20,13 +20,14 @@
 }
 .sideMenu a{
     padding: 8px 8px 8px 32px;
+    
     font-size: 25px;
     color: whitesmoke;
     display: block;
     transition: 0.4s; 
 }
 .sideMenu a:hover{
-    color: rgb(163, 163, 163);
+    color: rgb(148, 148, 148);
 }
 .sideMenu .closeMenu{
     position: absolute;
@@ -34,17 +35,107 @@
     right: 25px;
     margin-left: 50px;
 }
-.cabecera > span{
-    color: white;
+.cabecera  span{
+    color: whitesmoke;
+    margin-left: 5px;
     font-size: 30px;
     cursor: pointer;
+}
+.sideMenu  p:last-child{
+    color: whitesmoke;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
 }
 @media screen and (max-height: 450px){
     .sideMenu {padding-top: 15px;}
     .sideMenu a{font-size: 18px;}
 }
-/* END SIDE MENU */
+
+/* MESSAGE MENU */
+.messageMenu{
+    height: 0;
+    width: 0;
+    position: fixed;
+    z-index: 1;         /* Esta propiedad si esta en 1 significa que si se superpone a algún item, estará por encima. */
+    top: 50px;
+    left: 50px;
+    background-color: black;
+    overflow-x: hidden; 
+    transition: 0.5s;
+    padding-top: 20px;
+}
+.messageMenu p{
+    padding: 8px 4px 8px 32px;
+    font-size: 16px;
+    color: whitesmoke;
+    display: block;
+    transition: 0.4s;
+}
+.messageMenu a:hover{
+    color: rgb(148, 148, 148);
+}
+#textImp{
+    margin: 2em;
+    font-size: 16px;
+    color: black;
+    display: block;
+    transition: 0.4s; 
+}
+#sendMsg{
+    margin-left: 2em;
+} 
+.messageMenu .closeMessage{
+    position: absolute;
+    color: whitesmoke;
+    font-size: 25px;
+    top: 0;
+    right: 25px;
+    margin-left: 50px;
+}
+@media screen and (max-height: 450px){
+    .messageMenu {padding-top: 15px;}
+    .messageMenu a{font-size: 18px;}
+}
+
+/* El ícono del avión está en el html porque desde aquí no podía editarlo/*
+/* RESTO DE HEADER */
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 .cabecera{
     background-color: black;
     color: whitesmoke;
 }
+.cabecera > h1{
+    display:inline-block;
+    font-size: 36px;
+    margin-left: 0.7em;
+}
+.cabecera a{
+    display: inline-block;
+    font-size: 18px;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    left: 45%;
+    border: white outset 2px;
+    border-radius: 15px;
+    background-image: linear-gradient(whitesmoke, lightgray);
+}
+.cabecera a:hover{
+    background-image: linear-gradient(black, gray);
+    color: white;
+}
+#cart .fa{
+    font-size: 35px;
+    position: relative;
+    left: 46%;
+}
+#cart .fa:hover{
+    color: gray;
+}
+
