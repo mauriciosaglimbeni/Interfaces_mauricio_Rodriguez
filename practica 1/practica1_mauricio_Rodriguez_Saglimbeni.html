@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title> Kuatremish</title>
+        <link rel="stylesheet" type="text/css" href="practica1_mauricio_Rodriguez_Saglimbeni.css"/>
+        <script>
+            function openSideMenu(){
+                document.getElementById("sideMenu").style.width="250px";
+            }
+            function closeSideMenu(){
+                document.getElementById("sideMenu").style.width="0";
+            }
+        </script>
+    </head>
+    <body>
+        <div id="sideMenu" class="sideMenu">
+                <a href="javascript:void(0)" class="closeMenu" onclick="closeSideMenu()">&times;</a>
+                <p>KUATREMA</p>
+                <a href="#">Products</a>
+                <a href="#">About</a>
+                <a href="#">Contact Us</a>
+         </div>
+        <header class="cabecera">
+            <span onclick="openSideMenu()">&#9776;</span>
+            <h1>KUATREMA</h1>
+            <h2 class="elegirCat">Hombre</h2>
+            <h2 class="elegirCat">Mujer</h2>
+            <h2 class="elegirCat">Niño</h2>
+        </header>
+    </body>
+</html>

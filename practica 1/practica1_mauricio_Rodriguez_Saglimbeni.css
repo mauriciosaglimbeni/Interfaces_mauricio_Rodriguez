@@ -1,0 +1,50 @@
+/* SIDE MENU ONLY CSS */
+.sideMenu{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;         /* Esta propiedad si esta en 1 significa que si se superpone a algún item, estará por encima. */
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden; 
+    transition: 0.5s;
+    padding-top: 20px;
+}
+.sideMenu p{
+    padding: 8px 4px 8px 32px;
+    font-size: 30px;
+    color: whitesmoke;
+    display: block;
+    transition: 0.4s;
+}
+.sideMenu a{
+    padding: 8px 8px 8px 32px;
+    font-size: 25px;
+    color: whitesmoke;
+    display: block;
+    transition: 0.4s; 
+}
+.sideMenu a:hover{
+    color: rgb(163, 163, 163);
+}
+.sideMenu .closeMenu{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    margin-left: 50px;
+}
+.cabecera > span{
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+@media screen and (max-height: 450px){
+    .sideMenu {padding-top: 15px;}
+    .sideMenu a{font-size: 18px;}
+}
+/* END SIDE MENU */
+.cabecera{
+    background-color: black;
+    color: whitesmoke;
+}
