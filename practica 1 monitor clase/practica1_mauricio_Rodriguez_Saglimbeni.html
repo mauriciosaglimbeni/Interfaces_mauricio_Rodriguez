@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title> Kuatremish</title>
+    <link rel="stylesheet" type="text/css" href="practica1_mauricio_Rodriguez_Saglimbeni.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        function openSideMenu() {
+            document.getElementById("sideMenu").style.width = "250px";
+        }
+        function closeSideMenu() {
+            document.getElementById("sideMenu").style.width = "0";
+        }
+        function openMessageMenu() {
+            document.getElementById("messageMenu").style.width = "500px";
+            document.getElementById("messageMenu").style.height = "350px";
+        }
+        function closeMessageMenu() {
+            document.getElementById("messageMenu").style.width = "0";
+            document.getElementById("messageMenu").style.height = "0";
+        }
+    </script>
+</head>
+
+<body>
+    <div id="sideMenu" class="sideMenu">
+        <a href="javascript:void(0)" class="closeMenu" onclick="closeSideMenu()">&times;</a>
+        <p>KUATREMA </p>
+        <a href="#">Productos</a>
+        <a href="#">Sobre nosotros</a>
+        <a href="#">Contacto</a>
+        <p> Kuatrema&copy; 2021</p>
+    </div>
+    <div id="messageMenu" class="messageMenu">
+        <a href="javascript:void(0)" class="closeMessage" onclick="closeMessageMenu()">&times;</a>
+        <p> Danos tu opinión o dinos que podemos mejorar!</p>
+        <textarea id="textImp" name="textImp" rows="8" cols="40"> Tu mensaje!</textarea>
+        <br /> <input id="sendMsg" type="submit" value="Submit" />
+    </div>
+    <header class="cabecera">
+
+        <span onclick="openSideMenu()">&#9776;</span>
+        <i class="fa fa-paper-plane-o" onclick="openMessageMenu()"
+            style="font-size: 30px;color:white;margin-left: 0.5em;margin-top:10px;cursor:pointer;"></i>
+        <h1>KUATREMA</h1>
+        <p>we do what we like</p>
+        <a href="#" class="elegirCat">Hombre</a>
+        <a href="#" class="elegirCat">Mujer</a>
+        <a href="#" class="elegirCat">Niño</a>
+        <span id="cart"><i class="fa">&#xf07a;</i></span>
+        <input type="text" id="barraBusqueda" placeholder="Buscar">
+    </header>
+    <main class="mainContainer">
+        <div class="banner"> </div>
+        <h1>%OFERTAS%</h1>
+        <div class="featuredProducts">
+            <div id="producto1" class="producto">
+                <div class="overlay overlay1">
+                    <div class="desc">KUATREMA Tears <br /> 19.99&euro;</div>
+                </div>
+            </div>
+            <div id="producto2" class="producto">
+                <div class="overlay overlay2">
+                    <div class="desc">KUATREMA x GROOVY <br /> 11.99&euro;</div>
+                </div>
+            </div>
+            <div id="producto3" class="producto">
+                <div class="overlay overlay3">
+                    <div class="desc">KUATREMA big-brain <br /> 19.99&euro;</div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer class="piePag">
+        <div class="opciones">
+            <p>Dónde nos encontramos</p>
+            <p>Novedades</p>
+            <p>Trabaja con nosotros</p>
+            <p>Devoluciones</p>
+            <p>Contáctanos</p>
+        </div>
+        <div class="sesion">
+            <p>Crear cuenta</p>
+            <p>Iniciar sesión</p>
+        </div>
+        <div class="icons">
+            <i  class="fa twitter">&#xf099;</i>
+            <i  class="fa facebook">&#xf09a;</i>
+            <i  class="fa instagram">&#xf16d;</i>
+        </div>
+    </footer>
+</body>
+</html>
