@@ -1,0 +1,382 @@
+/* SIDE MENU  */
+.sideMenu{
+    height: 80%;
+    width: 0;
+    position: fixed;
+    z-index: 1;         /* Esta propiedad si esta en 1 significa que si se superpone a algún item, estará por encima. */
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden; 
+    transition: 0.5s;
+    padding-top: 20px;
+}
+.sideMenu > p:first-of-type{
+    padding: 8px 4px 8px 32px;
+    font-size: 30px;
+    color: whitesmoke;
+    display: block;
+    transition: 0.4s;
+}
+.sideMenu a{
+    padding: 8px 8px 8px 32px;
+    font-size: 25px;
+    color: whitesmoke;
+    display: block;
+    transition: 0.4s; 
+}
+.sideMenu a:hover{
+    color: gray
+}
+.sideMenu .closeMenu{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    margin-left: 50px;
+}
+.cabecera  span{
+    color: whitesmoke;
+    margin-left: 5px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.sideMenu  p:last-child{
+    color: whitesmoke;
+    padding: 8px 8px 8px 32px;
+    font-size: 14px;
+    position: relative;
+    top: 35vh;
+    transition: 0.4s;
+}
+/* MESSAGE MENU */
+.messageMenu{
+    height: 0;
+    width: 0;
+    position: fixed;
+    z-index: 1;         /* Esta propiedad si esta en 1 significa que si se superpone a algún item, estará por encima. */
+    top: 50px;
+    left: 50px;
+    background-color: black;
+    overflow-x: hidden; 
+    transition: 0.5s;
+    padding-top: 20px;
+}
+.messageMenu p{
+    padding: 8px 4px 8px 32px;
+    font-size: 16px;
+    color: whitesmoke;
+    display: block;
+    transition: 0.4s;
+}
+.messageMenu a:hover{
+    color: gray;
+}
+#textImp{
+    margin: 2em;
+    font-size: 16px;
+    color: black;
+    display: block;
+    transition: 0.4s; 
+}
+#sendMsg{
+    margin-left: 2em;
+} 
+.messageMenu .closeMessage{
+    position: absolute;
+    color: whitesmoke;
+    font-size: 25px;
+    top: 0;
+    right: 20px;
+    margin-left: 50px;
+}
+/* RESTO DE HEADER, título, categorias, carrito y barra de busqueda*/
+
+.cabeceraWrapper{
+    width: 101vw;
+    margin-top: -1.5em;
+    margin-left: -0.5em;
+    height: 15vh;
+    background-color: black;
+    position: fixed;
+    display: grid;
+    grid-gap:0.5em;
+    grid-template-rows: 5vh 5vh 5vh;
+    grid-template-columns: 4% 4% 15% 25% 5% 5% 5% 5% 20%;
+}
+.cabeceraWrapper > .h1{
+    color: white;
+    font-size: 35px;
+    grid-area: 2/ 1/ 2/ 1;
+    cursor: pointer;
+    position: relative;
+    bottom: 0.3em;
+}
+.h1:hover  {
+    color: gray;
+}
+#plane{
+    font-size: 30px;
+    color:white;
+    cursor:pointer;
+    grid-area: 2/ 2/ 2/ 2;
+}
+.cabeceraWrapper > h1{
+    font-size: 36px;
+    color: whitesmoke;
+    grid-area: 2 / 3 / 2 / 3;
+    position: relative;
+    bottom: 0.8em;
+    
+}
+.cabeceraWrapper p{
+    color: white;
+    font-size: 20px;
+    grid-area: 2/ 4 / 2 / 4;
+    position: relative;
+    bottom: 0.7em;
+}
+.cabeceraWrapper a{
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    border: white outset 2px;
+    border-radius: 15px;
+    background-image: linear-gradient(whitesmoke, lightgray);
+    float: right;
+}
+.h4{
+    grid-area: 2/5/2/5;
+}
+.h5{
+    grid-area: 2/6/2/6;
+}
+.h6{
+    grid-area: 2/7/2/7;
+}
+.cabeceraWrapper a:hover{
+    background-image: linear-gradient(black, gray);
+    color: white;
+}
+#cart{
+    font-size: 35px;
+    color: white;
+    float: right;
+    grid-area: 2/8/2/8;
+}
+#cart .fa:hover{
+    color: gray;
+}
+#barraBusqueda{
+    float: right;
+    padding: 6px;
+    border-radius: 15px;
+    border: none;
+    font-size: 18px;
+    grid-area: 2/9/2/9;
+}
+
+/* FIN DEL HEADER, EMPIEZA EL CONTENIDO*/
+.mainContainer{
+    margin:auto;
+    width: 100vw;
+    height: 77vh;
+    display: grid;
+    grid-template-columns: 30vw 50vw;
+    grid-template-rows: 1vh 25vh 5vh 20vh;
+}
+.banner{
+    width: 100vw;
+    height: 25vh;
+    background-image: url(KUATREMA_BANNER.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    grid-area: 2 / 2 / 2 / 2;
+}
+.mainContainer > h1{
+    text-indent: 10px;
+    letter-spacing: 2.8rem;
+    grid-area: 3/ 2 / 3 /2;
+    animation: glow 1s infinite alternate;
+
+}
+@keyframes glow {
+    to {
+        text-shadow: 0 0 10px fuchsia ;
+    }
+}
+.featuredProducts{
+    margin-top: 1em;
+    width: 100vw;
+    height: 23em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    grid-row: 4 / 4;
+}
+
+#producto1{
+    width: 18em;
+    background-image: url(KUATREMA_TEARS.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#producto2{
+    width: 18em;
+    background-image: url(KUATREMA_X_GROOVY.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#producto3{
+    width: 18em;
+    background-image: url(KUATREMA_BIGBRAIN.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+/* OVERLAY DE PRODUCTOS Y SU DESC*/
+.overlay {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 95%;
+    height: 0;
+    transition: .5s ease;
+  }
+  .overlay1{
+    background-color: #c22f789a;
+    margin-left: -0.6em;
+    padding-right: 4px;
+  }
+  .overlay2{
+    background-color: #622fc29a;
+  }
+  .overlay3{
+      padding-right: 0.9em;
+    background-color: #df47189a;
+  }
+  .producto{
+      cursor: pointer;
+  }
+  .producto:hover .overlay {
+    height: 20%;
+  }
+
+  .desc {
+    white-space: nowrap; 
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+/* FIN DEL CONTENIDO, EMPIEZA EL FOOTER */
+.piePag{
+    background-color: black;
+    color: whitesmoke;
+    position: fixed;
+    bottom: 0px;
+    left: -2em;
+    width: 110vw;
+    height: 18vh;
+    background-image: url(KUATREMA_CIRCLE.png);
+    background-size: 7em 6em;
+    background-repeat: no-repeat;
+    background-position:47vw;
+    display: grid;
+    grid-template-columns: 35% 50% 25% ;
+}
+.opciones{
+    display: flex;
+    flex-direction: column;
+    padding-left: 3em;
+    grid-column: 1 1;
+}
+.sesion{
+    display: flex;
+    flex-direction: column;
+    grid-column: 3/ 3;
+}
+.opciones p, .sesion p{
+    color: whitesmoke;
+    margin-bottom: -0.8em;
+    font-size: 16px;
+}
+.opciones p:hover,.sesion p:hover{
+    color: gray;
+    cursor: pointer;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    gap:0.3em;
+    color: whitesmoke;
+    font-size: 30px;
+    position: relative;
+    top: 0.5em;
+}
+.icons i:hover{
+    color: gray;
+    cursor: pointer;
+}
+
+
+
+
+
+@media (min-width:320px) and (max-width:480px)  { /* telefonos */ 
+    /* CAMBIOS PARA EL HEADER */
+    #plane{
+        margin-left: 15px;
+    }
+    .cabeceraWrapper > h1{
+        margin-left: 35px;
+    }
+    .cabeceraWrapper > p{
+        visibility: hidden;
+    }
+    .cabeceraWrapper > a{
+        visibility: hidden;
+    }
+    .h8{
+        visibility: hidden;
+    }
+    #cart{
+        position: relative;
+        margin-left: 15px;
+    }
+    /* CAMBIOS PARA EL CONTENIDO*/
+    
+    .mainContainer{
+        margin: 0%;
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 8vh 13vh 10vh 100em;
+        grid-template-columns: 10% 80% 10%;
+    }
+    .banner{
+        grid-area: 2 /2/2/ 2;
+        background-size: 19em;
+    }
+    .mainContainer > h1{
+        grid-row: 3 / 3;
+        letter-spacing: 9px;
+    }
+    .featuredProducts{
+        grid-row: 4 / 4;
+        flex-direction: column;
+    }
+    /* CAMBIOS PARA EL PIE DE PAG*/
+    .opciones:nth-child(2){
+        visibility: hidden;
+    }
+    .sesion{
+        position: relative;
+        right: 3em;
+    }
+}
