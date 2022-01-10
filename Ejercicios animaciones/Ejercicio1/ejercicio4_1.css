@@ -1,0 +1,36 @@
+.contenedor{
+    height: 15em;
+    width: fit-content;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    margin: auto;
+    
+}
+.titulo{
+    font-weight: bold;
+    
+}
+.texto{
+    width: 100%;
+    cursor: pointer;
+}
+#t1{
+    background-color:yellow;
+    display: none;
+}
+#t2{
+    background-color: green;
+    display: none;
+}
+#t3{
+    background-color: thistle;
+    display: none;
+}
+#t4{
+    background-color:dodgerblue;
+    display: none;
+}
