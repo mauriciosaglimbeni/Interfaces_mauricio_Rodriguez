@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title> Ejercicio 3 Unidad 5</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    </head>
+    <body>
+        <h3> Pulsa play para escuchar esto: <a href="https://www.youtube.com/watch?v=omzJvwYO440">Elegia de The New Order</a></h3>
+        <span style="color: red;display: block;">Probar en cualquier navegador</span><br/>
+        <audio autoplay loop preload="auto">
+            <source src=".Elegia.mp3" type="audio/mpeg"/>
+            <source src="./Elegia.ogg" type="audio/ogg"/>
+            El navegador no quiere el audio.
+        </audio>
+        <button onclick="play()">PLAY <i class="fa fa-play"></i></button>
+        <button onclick="pause()">PAUSE <i class="fa fa-pause"></i></button>
+        <button onclick="stop()">STOP <i class="fa fa-stop"></i></button>
+        <button onclick="volUp()">+ VOLUME <i class="fa fa-volume-up"></i></button>
+        <button onclick="volDown()">- VOLUME <i class="fa fa-volume-down"></i></button>
+        <!-- Links a JS-->
+        <script src="ejercicio3.js"></script>
+    </body>
+</html>
