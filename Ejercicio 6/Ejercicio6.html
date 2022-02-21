@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio 6</title>
+        <style>
+            #galeria{
+                /* background-image: url("js.png"); */
+                height: 10em;
+                width: 10em;
+                animation-name: bg-gallery;
+                animation-duration: 8s;
+                animation-iteration-count: infinite;
+
+            }
+           @keyframes bg-gallery{
+                0%{
+                    background-image: url("js.png");
+                    background-size: contain;
+                }
+                25%{
+                    background-image: url("html.png");
+                    background-size: contain;
+                }
+                50%{
+                    background-image: url("css.png");
+                    background-size:contain;
+                }
+                75%{
+                    background-image: url("bootstrap.png");
+                    background-size: contain;
+                }
+                100%{
+                    background-image: url("js.png");
+                    background-size: contain;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="galeria">
+
+        </div>
+    </body>
+</html>
